@@ -3,11 +3,11 @@
 one:
   name: MyString
   format: MyString
-  length: 2014-10-16 01:19:29
+  length: MyString
   size: MyString
 
 two:
   name: MyString
   format: MyString
-  length: 2014-10-16 01:19:29
+  length: MyString
   size: MyString

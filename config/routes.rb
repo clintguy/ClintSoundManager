@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  get 'welcome/about'
   get 'welcome/index'
+  get 'welcome/contact'
+  get 'sounds/index'
+  get 'sounds/new'
+  get 'sounds/show'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

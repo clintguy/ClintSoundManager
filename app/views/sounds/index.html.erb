@@ -1,23 +1,41 @@
+<% content_for :title do %>Sounds Listing<% end %>
+<% content_for :description do %>List of sounds in Sound Library<% end %>
+
 <h1>Sound Library</h1>
 
-<%= link_to 'New Sound', new_sound_path %>
-<table id='SoundTable'>
-  <tr>
-    <th>Name</th>
-    <th>Format</th>
-    <th>Length</th>
-    <th>Size</th>
-  </tr>
-  <% @sounds.each do |sound| %>
-  <tr>
-    <% if false %>
-    <td><%= link_to 'Delete', :controller => 'sound', :action => "delete", :id => sound.id %></td>
-    <% end %>
-    <td><%=sound.name %></td>
-    <td><%=sound.format %></td>
-    <td><%=sound.length %></td>
-    <td><%=sound.size %></td>
-  </tr>
-  <% end %>
-  
-</table>
+
+
+<head>
+    <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div style="padding: 25px" >
+        <%= link_to 'New Sound', new_sound_path %>
+        <table id='soundtable' width="500">
+          <tr align="left" cellpadding="25px">
+            <th>Name</th>
+            <th>Format</th>
+            <th>Length</th>
+            <th>Size</th>
+          </tr>
+          <% @sounds.each do |sound| %>
+          <tr>
+            <td><%=sound.name %></td>
+            <td><%=sound.format %></td>
+            <td><%=sound.length %></td>
+            <td><%=sound.size %></td>
+          </tr>
+          <% end %>
+
+        </table>
+      </div>
+    </header>
+  </body>

@@ -1,3 +1,6 @@
+<% content_for :title do %>New Sound<% end %>
+<% content_for :description do %>Create a New Sound<% end %>
+
 <%= form_for :sound, url: sounds_path do |f| %>
     <p>
       <%= f.label :name  %><br>
