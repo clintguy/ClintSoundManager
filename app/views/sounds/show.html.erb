@@ -1,0 +1,13 @@
+show.html.erb
+
+<div id="soundlist">
+  <ul>
+    <li><%= @sound.name %></li>
+    <li><%= @sound.format %></li>
+    <li><%= @sound.length %></li>
+    <li><%= @sound.size %></li>
+  </ul>
+</div>
+
+
+<%= link_to 'Back', sounds_path %>

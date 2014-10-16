@@ -1,0 +1,23 @@
+<h1>Sound Library</h1>
+
+<%= link_to 'New Sound', new_sound_path %>
+<table id='SoundTable'>
+  <tr>
+    <th>Name</th>
+    <th>Format</th>
+    <th>Length</th>
+    <th>Size</th>
+  </tr>
+  <% @sounds.each do |sound| %>
+  <tr>
+    <% if false %>
+    <td><%= link_to 'Delete', :controller => 'sound', :action => "delete", :id => sound.id %></td>
+    <% end %>
+    <td><%=sound.name %></td>
+    <td><%=sound.format %></td>
+    <td><%=sound.length %></td>
+    <td><%=sound.size %></td>
+  </tr>
+  <% end %>
+  
+</table>
