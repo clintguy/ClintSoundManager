@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -28,7 +28,12 @@ gem 'spring',        group: :development
 
 gem 'bootstrap-sass', '~> 2.3.1.0'
 
+group :development, :test do
+  gem 'sqlite3' # Use sqlite3 as the database for Active Record
+end
 
-# From heroku website 
-gem 'pg'  #this may already exist in the Gemfile
-gem 'rails_12factor', group: :production
+group :production do
+  gem 'pg' #this may already exist in the Gemfile
+  gem 'rails_12factor'
+end
+
