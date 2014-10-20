@@ -3,8 +3,6 @@
 
 <h1>Sound Library</h1>
 
-
-
 <head>
     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -19,21 +17,26 @@
     <header>
       <div style="padding: 25px" >
         <%= link_to 'New Sound', new_sound_path %>
-        <table id='soundtable' width="500">
-          <tr align="left" cellpadding="25px">
-            <th>Name</th>
-            <th>Format</th>
-            <th>Length</th>
-            <th>Size</th>
-          </tr>
-          <% @sounds.each do |sound| %>
-          <tr>
-            <td><%=sound.name %></td>
-            <td><%=sound.format %></td>
-            <td><%=sound.length %></td>
-            <td><%=sound.size %></td>
-          </tr>
-          <% end %>
+        <table class='table table-bordered'  width="500">
+          <thead>
+            <tr>
+              <th><%= link_to "Name", :sort => "name" %></th>
+              <th><%= link_to "Format", :sort => "format" %></th>
+              <th><%= link_to "Length", :sort => "length" %></th>
+              <th><%= link_to "Size", :sort => "size" %></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @sounds.each do |sound| %>
+            <tr>
+              <td><%= sound.name %></td>
+              <td><%= sound.format %></td>
+              <td><%= sound.length %></td>
+              <td><%= sound.size %></td>
+              <td><%= link_to "Edit", sounds_edit_path %></td>
+            </tr> 
+            <% end %>
+          </tbody>
 
         </table>
       </div>

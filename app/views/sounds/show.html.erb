@@ -1,14 +1,28 @@
 <% content_for :title do %>New Sound<% end %>
 <% content_for :description do %>New Sound Created<% end %>
 
-<div id="soundlist">
-  <ul>
-    <li><%= @sound.name %></li>
-    <li><%= @sound.format %></li>
-    <li><%= @sound.length %></li>
-    <li><%= @sound.size %></li>
-  </ul>
-</div>
-
-
-<%= link_to 'Back', sounds_path %>
+  <head>
+      <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= csrf_meta_tags %>
+      <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+        </script>
+      <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div style="padding: 25px" >
+        <div id="soundlist">
+          <ul>
+            <li><%= @sound.name %></li>
+            <li><%= @sound.format %></li>
+            <li><%= @sound.length %></li>
+            <li><%= @sound.size %></li>
+          </ul>
+        </div>
+        <%= link_to 'Back', sounds_path %>
+      </div>
+    </header>
+  </body>

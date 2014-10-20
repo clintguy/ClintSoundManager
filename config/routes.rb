@@ -1,10 +1,18 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   get 'welcome/about'
   get 'welcome/index'
   get 'welcome/contact'
+  
   get 'sounds/index'
   get 'sounds/new'
   get 'sounds/show'
+  get 'sounds/edit'
+  
+  get 'users/new'
+  get 'users/signin'
+  
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
