@@ -31554,3 +31554,557 @@ Started GET "/assets/colorful_music.jpg" for 70.140.102.199 at 2014-10-20 07:38:
 
 
 Started GET "/assets/application.js?body=1" for 70.140.102.199 at 2014-10-20 07:38:53 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 70.140.102.199 at 2014-10-20 19:30:08 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 891ms (Views: 869.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/simple.css.bak.css" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/simple.css.bak.css"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/sounds.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/application.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/sounds.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/users.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/assets/colorful_music.jpg" for 70.140.102.199 at 2014-10-20 19:30:09 +0000
+
+
+Started GET "/sounds/index" for 70.140.102.199 at 2014-10-20 19:30:11 +0000
+Processing by SoundsController#index as HTML
+  [1m[35mSound Load (0.3ms)[0m  SELECT "sounds".* FROM "sounds"   ORDER BY name asc
+  Rendered sounds/index.html.erb within layouts/application (230.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 436ms (Views: 432.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/sounds.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:12 +0000
+
+
+Started GET "/stylesheets/simple.css.bak.css" for 70.140.102.199 at 2014-10-20 19:30:12 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/simple.css.bak.css"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (190.1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:12 +0000
+
+
+Started GET "/assets/users.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:12 +0000
+
+
+Started GET "/assets/sounds.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:12 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:12 +0000
+
+
+Started GET "/assets/users.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:12 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:12 +0000
+
+
+Started GET "/sounds/new" for 70.140.102.199 at 2014-10-20 19:30:19 +0000
+Processing by SoundsController#new as HTML
+  Rendered sounds/new.html.erb within layouts/application (234.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 445ms (Views: 444.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/simple.css.bak.css" for 70.140.102.199 at 2014-10-20 19:30:19 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/simple.css.bak.css"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.5ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:19 +0000
+
+
+Started GET "/assets/sounds.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:19 +0000
+
+
+Started GET "/assets/users.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:19 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:19 +0000
+
+
+Started GET "/assets/sounds.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:19 +0000
+
+
+Started GET "/assets/users.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:19 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:19 +0000
+
+
+Started POST "/sounds" for 70.140.102.199 at 2014-10-20 19:30:34 +0000
+Processing by SoundsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bZi40QJc4CM6laEpOuD7UNUXWUjYSFXjiAti4UoXdVo=", "sound"=>{"name"=>"Test1234", "format"=>"Tape", "length"=>"18 Mins", "size"=>"18 MB"}, "commit"=>"Save Sound"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sounds" ("created_at", "format", "length", "name", "size", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-10-20 19:30:34.491308"], ["format", "Tape"], ["length", "18 Mins"], ["name", "Test1234"], ["size", "18 MB"], ["updated_at", "2014-10-20 19:30:34.491308"]]
+  [1m[36m (161.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://clint-sound-manager-155021.use1.nitrousbox.com/sounds/16
+Completed 302 Found in 175ms (ActiveRecord: 161.8ms)
+
+
+Started GET "/sounds/16" for 70.140.102.199 at 2014-10-20 19:30:34 +0000
+Processing by SoundsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mSound Load (0.3ms)[0m  SELECT  "sounds".* FROM "sounds"  WHERE "sounds"."id" = ? LIMIT 1  [["id", 16]]
+  Rendered sounds/show.html.erb within layouts/application (225.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 436ms (Views: 432.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/simple.css.bak.css" for 70.140.102.199 at 2014-10-20 19:30:35 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/simple.css.bak.css"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:35 +0000
+
+
+Started GET "/assets/sounds.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:35 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:35 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:35 +0000
+
+
+Started GET "/assets/sounds.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:35 +0000
+
+
+Started GET "/assets/users.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:35 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:35 +0000
+
+
+Started GET "/sounds" for 70.140.102.199 at 2014-10-20 19:30:37 +0000
+Processing by SoundsController#index as HTML
+  [1m[36mSound Load (0.3ms)[0m  [1mSELECT "sounds".* FROM "sounds"   ORDER BY name asc[0m
+  Rendered sounds/index.html.erb within layouts/application (222.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 428ms (Views: 427.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sounds.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:37 +0000
+
+
+Started GET "/assets/users.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:37 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:37 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:37 +0000
+
+
+Started GET "/stylesheets/simple.css.bak.css" for 70.140.102.199 at 2014-10-20 19:30:37 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/simple.css.bak.css"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (278.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (311.0ms)
+
+
+Started GET "/assets/sounds.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:38 +0000
+
+
+Started GET "/assets/users.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:38 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:38 +0000
+
+
+Started GET "/welcome/index" for 70.140.102.199 at 2014-10-20 19:30:40 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 237ms (Views: 236.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/colorful_music.jpg" for 70.140.102.199 at 2014-10-20 19:30:40 +0000
+
+
+Started GET "/users/new" for 70.140.102.199 at 2014-10-20 19:30:43 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (209.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 414ms (Views: 412.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/simple.css.bak.css" for 70.140.102.199 at 2014-10-20 19:30:43 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/simple.css.bak.css"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.6ms)
+
+
+Started GET "/assets/sounds.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:43 +0000
+
+
+Started GET "/assets/users.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:43 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 70.140.102.199 at 2014-10-20 19:30:43 +0000
+
+
+Started GET "/assets/sounds.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:43 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:43 +0000
+
+
+Started GET "/assets/users.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:43 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 70.140.102.199 at 2014-10-20 19:30:43 +0000
+
+
+Started GET "/welcome/index" for 70.140.102.199 at 2014-10-20 19:30:51 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 215ms (Views: 214.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/about" for 70.140.102.199 at 2014-10-20 19:30:54 +0000
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 206ms (Views: 205.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/contact" for 70.140.102.199 at 2014-10-20 19:30:59 +0000
+Processing by WelcomeController#contact as HTML
+  Rendered welcome/contact.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 209ms (Views: 208.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 70.140.102.199 at 2014-10-20 19:31:06 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 209ms (Views: 208.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sounds/index" for 70.140.102.199 at 2014-10-20 19:31:10 +0000
+Processing by SoundsController#index as HTML
+  [1m[35mSound Load (0.3ms)[0m  SELECT "sounds".* FROM "sounds"   ORDER BY name asc
+  Rendered sounds/index.html.erb within layouts/application (212.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 421ms (Views: 420.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/simple.css.bak.css" for 70.140.102.199 at 2014-10-20 19:31:11 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/simple.css.bak.css"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.6ms)
+
+
+Started GET "/assets/sounds.css?body=1" for 70.140.102.199 at 2014-10-20 19:31:11 +0000
+
+
+Started GET "/assets/users.js?body=1" for 70.140.102.199 at 2014-10-20 19:31:11 +0000
+
+
+Started GET "/assets/welcome.css?body=1" for 70.140.102.199 at 2014-10-20 19:31:11 +0000
+
+
+Started GET "/assets/users.css?body=1" for 70.140.102.199 at 2014-10-20 19:31:11 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 70.140.102.199 at 2014-10-20 19:31:11 +0000
+
+
+Started GET "/assets/sounds.js?body=1" for 70.140.102.199 at 2014-10-20 19:31:11 +0000
+
+
+Started GET "/assets/welcome.js?body=1" for 70.140.102.199 at 2014-10-20 19:31:11 +0000
+
+
+Started GET "/welcome/index" for 70.140.102.199 at 2014-10-20 19:31:13 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 215ms (Views: 214.3ms | ActiveRecord: 0.0ms)
