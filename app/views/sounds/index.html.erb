@@ -36,7 +36,7 @@
               <td><%= sound.length %></td>
               <td><%= sound.size %></td>
               
-              <td><%= link_to "Edit", sounds_edit_path(sound) %></td>
+              <td><%= link_to "Edit", edit_sound_path(sound) %></td>
               <td><%= link_to "Delete", sound, method: :delete, data:{confirm: "Are you sure?"} %></td>
             </tr> 
             <% end %>

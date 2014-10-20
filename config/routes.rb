@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   get 'sounds/index'
   get 'sounds/new'
   get 'sounds/show'
-  get 'sounds/edit'
+  
+  get 'sounds/:id(.:format)', to: 'sounds#edit'
   
   get 'users/new'
   get 'users/signin'
@@ -28,7 +29,9 @@ Rails.application.routes.draw do
   
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  resources :sounds
+ resources :sounds
+
+
 
   # Example resource route with options:
   #   resources :products do
