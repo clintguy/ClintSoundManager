@@ -1,9 +1,9 @@
 <% content_for :title do %>Sounds Listing<% end %>
 <% content_for :description do %>List of sounds in Sound Library<% end %>
 
-<h1>Sound Library</h1>
+  <h1>Sound Library</h1>
 
-<head>
+  <head>
     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -24,6 +24,8 @@
               <th><%= link_to "Format", :sort => "format" %></th>
               <th><%= link_to "Length", :sort => "length" %></th>
               <th><%= link_to "Size", :sort => "size" %></th>
+              <th> Modify </th>
+              <th> Remove </th>
             </tr>
           </thead>
           <tbody>
@@ -33,7 +35,9 @@
               <td><%= sound.format %></td>
               <td><%= sound.length %></td>
               <td><%= sound.size %></td>
-              <td><%= link_to "Edit", sounds_edit_path %></td>
+              
+              <td><%= link_to "Edit", sounds_edit_path(sound) %></td>
+              <td><%= link_to "Delete", sound, method: :delete, data:{confirm: "Are you sure?"} %></td>
             </tr> 
             <% end %>
           </tbody>

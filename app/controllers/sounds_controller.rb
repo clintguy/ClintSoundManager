@@ -25,10 +25,27 @@ class SoundsController < ApplicationController
     @sound = Sound.delete(params[:id])
   end
   
+  def destroy
+    Sound.find(params[:id]).destroy
+    flash[:success] = "Sound deleted"
+    redirect_to sounds_url
+  end
+  
+  def edit
+    @sound = Sound.find(params[:id])
+  end
+  
   def update
     @sound = Sound.find(params[:id])
-    render "sounds/edit"
+    if @sound.update_attributes(sound_params)
+      flash[:success] = "Sound updated"
+      redirect_to @sound
+    else
+      render 'edit'
+    end
   end
+  
+  
   private
   def sound_params
     params.require(:sound).permit(:name, :format, :length, :size)

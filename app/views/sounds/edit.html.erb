@@ -13,33 +13,35 @@
   </head>
   <body>
     <header>
-      <div class ="col-md-6 col-md-offset-3" style="padding: 25px" >
-        <%= form_for :sound, url: sounds_path do |f| %>
-            <p>
-              <%= f.label :name  %><br>
-              <%= f.text_field  @sound.name %>
-            </p>
-
-            <p>
-              <%= f.label :format %><br>
-              <%= f.text_field :format %>
-            </p>
-
-            <p>
-              <%= f.label :length %><br>
-              <%= f.text_field :length %>
-            </p>
-
-            <p>
-              <%= f.label :size %><br>
-              <%= f.text_field :size %>
-            </p>
-
-            <p>
-              <%= f.submit %>
+      <div class="row" style="padding: 25px">
+        <div class ="col-md-6 col-md-offset-3">
+          <%= form_for(@sound) do |f| %>
+              <p>
+                <%= f.label :name  %><br>
+                <%= f.text_field  :name, class: 'form-control' %>
               </p>
-        <% end %>
-        <%= link_to 'Back', sounds_path %>
+
+              <p>
+                <%= f.label :format %><br>
+                <%= f.text_field :format, class: 'form-control' %>
+              </p>
+
+              <p>
+                <%= f.label :length %><br>
+                <%= f.text_field :length, class: 'form-control' %>
+              </p>
+
+              <p>
+                <%= f.label :size %><br>
+                <%= f.text_field :size, class: 'form-control' %>
+              </p>
+
+              <p>
+                <%= f.submit "Save changes", class: "btn btn-primary" %>
+                </p>
+          <% end %>
+          <%= link_to 'Back', sounds_path %>
+        </div>
       </div>
     </header>
   </body>
