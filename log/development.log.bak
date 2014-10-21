@@ -110,7 +110,7 @@ ActionView::Template::Error (Asset filtered out and will not be served: add `Rai
     3: <head>
     4:   <title>Soundmanager</title>
     5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    6:   <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     7:   <%= csrf_meta_tags %>
     8: </head>
   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__616307813786519221_69840162615560'
@@ -132,7 +132,7 @@ ActionView::Template::Error (Asset filtered out and will not be served: add `Rai
     3: <head>
     4:   <title>Soundmanager</title>
     5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    6:   <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     7:   <%= csrf_meta_tags %>
     8: </head>
   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__616307813786519221_69840162615560'
@@ -154,7 +154,7 @@ ActionView::Template::Error (Asset filtered out and will not be served: add `Rai
     3: <head>
     4:   <title>Soundmanager</title>
     5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    6:   <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     7:   <%= csrf_meta_tags %>
     8: </head>
   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__616307813786519221_69840164151880'
@@ -176,7 +176,7 @@ ActionView::Template::Error (Asset filtered out and will not be served: add `Rai
     3: <head>
     4:   <title>Soundmanager</title>
     5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    6:   <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     7:   <%= csrf_meta_tags %>
     8: </head>
   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__616307813786519221_69840164151880'
@@ -199,7 +199,7 @@ ActionView::Template::Error (Asset filtered out and will not be served: add `Rai
     3: <head>
     4:   <title>Soundmanager</title>
     5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    6:   <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     7:   <%= csrf_meta_tags %>
     8: </head>
   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2036432675817703968_70120913121500'
@@ -2945,7 +2945,7 @@ ActionView::Template::Error (undefined method `full_title' for #<#<Class:0x007f2
     4:     <title><%= full_title(yield(:title)) %></title>
     5:     <%= stylesheet_link_tag 'application', media: 'all',
     6:                                            'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   app/views/layouts/application.html.erb:4:in `_app_views_layouts_application_html_erb__4463523873632637661_69908304363720'
 
 
@@ -3268,7 +3268,7 @@ Load paths:
     4:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     5:     <%= stylesheet_link_tag 'application', media: 'all',
     6:                                            'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
   app/assets/stylesheets/application.css.scss:17
   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4463523873632637661_69908113196500'
@@ -5603,7 +5603,7 @@ ActionView::Template::Error (Invalid CSS after "...ckground-color:": expected ex
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
   app/assets/stylesheets/application.css.scss:35
@@ -5626,7 +5626,7 @@ ActionView::Template::Error (Invalid CSS after "  resize": expected ";", was ": 
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
   app/assets/stylesheets/application.css.scss:36
@@ -17361,7 +17361,7 @@ ActionView::Template::Error (Mixin box-sizing is missing argument $boxmodel.
     4:   <head>
     5:       <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:       <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:       <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:       <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:       <%= csrf_meta_tags %>
     9:       <!--[if lt IE 9]>
   app/assets/stylesheets/application.css.scss:163:in `box_sizing'
@@ -33463,7 +33463,7 @@ ActionView::Template::Error (Invalid CSS after "  bottom": expected ";", was ": 
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
   app/assets/stylesheets/application.css.scss:111
@@ -49000,7 +49000,7 @@ ActionView::Template::Error (couldn't find file 'self'
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -49022,7 +49022,7 @@ ActionView::Template::Error (couldn't find file 'self'
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -49918,7 +49918,7 @@ ActionView::Template::Error (couldn't find file 'self'
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -49940,7 +49940,7 @@ ActionView::Template::Error (couldn't find file 'self'
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -49962,7 +49962,7 @@ ActionView::Template::Error (couldn't find file 'self'
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -49984,7 +49984,7 @@ ActionView::Template::Error (couldn't find file 'self'
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -50085,7 +50085,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:4:12: reserved word "function"
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -50107,7 +50107,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:4:12: reserved word "function"
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -50129,7 +50129,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:5:14: reserved word "function"
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -50151,7 +50151,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:5:14: reserved word "function"
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -50207,7 +50207,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:5:14: reserved word "function"
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -50229,7 +50229,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:5:14: reserved word "function"
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -52496,7 +52496,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
     18:   <head>
     19:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     20:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    21:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    21:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     22:     <%= csrf_meta_tags %>
     23:     <!--[if lt IE 9]>
     24:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -52518,7 +52518,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
     18:   <head>
     19:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     20:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    21:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    21:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     22:     <%= csrf_meta_tags %>
     23:     <!--[if lt IE 9]>
     24:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -52540,7 +52540,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -52562,7 +52562,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -52584,7 +52584,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
     4:   <head>
     5:     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:     <%= csrf_meta_tags %>
     9:     <!--[if lt IE 9]>
    10:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -52715,7 +52715,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
      9:     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     10: 		<link rel="stylesheet" type="text/css" href="dataTables.bootstrap.css">
     11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    12:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     13:     <%= csrf_meta_tags %>
     14:     <!--[if lt IE 9]>
     15:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -53484,7 +53484,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
     4:   <head>
     5:       <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     6:       <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    7:       <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    7:       <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     8:       <%= csrf_meta_tags %>
     9:       <!--[if lt IE 9]>
    10:         <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -56815,7 +56815,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
      9:     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     10: 		<link rel="stylesheet" type="text/css" href="dataTables.bootstrap.css">
     11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    12:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     13:     <%= csrf_meta_tags %>
     14:     <!--[if lt IE 9]>
     15:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -56837,7 +56837,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
      9:     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     10: 		<link rel="stylesheet" type="text/css" href="dataTables.bootstrap.css">
     11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    12:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     13:     <%= csrf_meta_tags %>
     14:     <!--[if lt IE 9]>
     15:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -56859,7 +56859,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
      9:     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     10: 		<link rel="stylesheet" type="text/css" href="dataTables.bootstrap.css">
     11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    12:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     13:     <%= csrf_meta_tags %>
     14:     <!--[if lt IE 9]>
     15:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -56881,7 +56881,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
      9:     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     10: 		<link rel="stylesheet" type="text/css" href="dataTables.bootstrap.css">
     11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    12:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     13:     <%= csrf_meta_tags %>
     14:     <!--[if lt IE 9]>
     15:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -57000,7 +57000,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
      9:     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     10: 		<link rel="stylesheet" type="text/css" href="dataTables.bootstrap.css">
     11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    12:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     13:     <%= csrf_meta_tags %>
     14:     <!--[if lt IE 9]>
     15:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -57022,7 +57022,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
      9:     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     10: 		<link rel="stylesheet" type="text/css" href="dataTables.bootstrap.css">
     11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    12:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     13:     <%= csrf_meta_tags %>
     14:     <!--[if lt IE 9]>
     15:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -57045,7 +57045,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
      9:     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     10: 		<link rel="stylesheet" type="text/css" href="dataTables.bootstrap.css">
     11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    12:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     13:     <%= csrf_meta_tags %>
     14:     <!--[if lt IE 9]>
     15:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -57067,7 +57067,7 @@ ActionView::Template::Error (SyntaxError: [stdin]:27:53: reserved word "function
      9:     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     10: 		<link rel="stylesheet" type="text/css" href="dataTables.bootstrap.css">
     11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    12:     <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     13:     <%= csrf_meta_tags %>
     14:     <!--[if lt IE 9]>
     15:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -66979,315 +66979,3 @@ ActionController::RoutingError (No route matches [GET] "/images/sort_asc.png"):
   Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
   Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
   Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.9ms)
-
-
-Started GET "/" for 70.140.102.199 at 2014-10-21 12:36:42 +0000
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (5.5ms)
-  Rendered layouts/_footer.html.erb (0.8ms)
-Completed 200 OK in 146ms (Views: 122.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/simple.css.bak.css" for 70.140.102.199 at 2014-10-21 12:36:43 +0000
-
-ActionController::RoutingError (No route matches [GET] "/stylesheets/simple.css.bak.css"):
-  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.1.0) lib/rails/engine.rb:514:in `call'
-  railties (4.1.0) lib/rails/application.rb:144:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.0ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.0ms)
-
-
-Started GET "/assets/sounds.css?body=1" for 70.140.102.199 at 2014-10-21 12:36:43 +0000
-
-
-Started GET "/assets/users.css?body=1" for 70.140.102.199 at 2014-10-21 12:36:43 +0000
-
-
-Started GET "/assets/application.css?body=1" for 70.140.102.199 at 2014-10-21 12:36:43 +0000
-
-
-Started GET "/assets/welcome.css?body=1" for 70.140.102.199 at 2014-10-21 12:36:43 +0000
-
-
-Started GET "/javascripts/defaults.js" for 70.140.102.199 at 2014-10-21 12:36:43 +0000
-
-ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
-  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.1.0) lib/rails/engine.rb:514:in `call'
-  railties (4.1.0) lib/rails/application.rb:144:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.9ms)
-
-
-Started GET "/assets/colorful_music.jpg" for 70.140.102.199 at 2014-10-21 12:36:43 +0000
-
-
-Started GET "/sounds/index" for 70.140.102.199 at 2014-10-21 12:36:44 +0000
-Processing by SoundsController#index as HTML
-  [1m[35mSound Load (0.4ms)[0m  SELECT "sounds".* FROM "sounds"
-  Rendered sounds/index.html.erb within layouts/application (120.2ms)
-  Rendered layouts/_footer.html.erb (0.3ms)
-Completed 200 OK in 222ms (Views: 218.7ms | ActiveRecord: 1.0ms)
-
-
-Started GET "/stylesheets/simple.css.bak.css" for 70.140.102.199 at 2014-10-21 12:36:44 +0000
-
-ActionController::RoutingError (No route matches [GET] "/stylesheets/simple.css.bak.css"):
-  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.1.0) lib/rails/engine.rb:514:in `call'
-  railties (4.1.0) lib/rails/application.rb:144:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.8ms)
-
-
-Started GET "/assets/sounds.css?body=1" for 70.140.102.199 at 2014-10-21 12:36:44 +0000
-
-
-Started GET "/assets/users.css?body=1" for 70.140.102.199 at 2014-10-21 12:36:44 +0000
-
-
-Started GET "/assets/welcome.css?body=1" for 70.140.102.199 at 2014-10-21 12:36:44 +0000
-
-
-Started GET "/javascripts/defaults.js" for 70.140.102.199 at 2014-10-21 12:36:44 +0000
-
-ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
-  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.1.0) lib/rails/engine.rb:514:in `call'
-  railties (4.1.0) lib/rails/application.rb:144:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.7ms)
-
-
-Started GET "/sounds/dataTables.bootstrap.css" for 70.140.102.199 at 2014-10-21 12:36:44 +0000
-
-ActionController::RoutingError (No route matches [GET] "/sounds/dataTables.bootstrap.css"):
-  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.1.0) lib/rails/engine.rb:514:in `call'
-  railties (4.1.0) lib/rails/application.rb:144:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.9ms)
-
-
-Started GET "/sounds/dataTables.bootstrap.js" for 70.140.102.199 at 2014-10-21 12:36:44 +0000
-
-ActionController::RoutingError (No route matches [GET] "/sounds/dataTables.bootstrap.js"):
-  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.1.0) lib/rails/engine.rb:514:in `call'
-  railties (4.1.0) lib/rails/application.rb:144:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.2ms)
-
-
-Started GET "/images/sort_both.png" for 70.140.102.199 at 2014-10-21 12:36:45 +0000
-
-ActionController::RoutingError (No route matches [GET] "/images/sort_both.png"):
-  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.1.0) lib/rails/engine.rb:514:in `call'
-  railties (4.1.0) lib/rails/application.rb:144:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.8ms)
-
-
-Started GET "/images/sort_asc.png" for 70.140.102.199 at 2014-10-21 12:36:45 +0000
-
-ActionController::RoutingError (No route matches [GET] "/images/sort_asc.png"):
-  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.1.0) lib/rails/engine.rb:514:in `call'
-  railties (4.1.0) lib/rails/application.rb:144:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
-  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.8ms)
