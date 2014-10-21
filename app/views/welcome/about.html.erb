@@ -1,2 +1,21 @@
+<% content_for :title do %>About<% end %>
+<% content_for :description do %>About this site<% end %>
+
 <h1>About</h1>
-<p>This Ruby App was created for a coding challenge by Clint Best 2014</p>
+
+<html>
+  <head>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container" style="padding: 25px">
+      <p>This Ruby App was created for a coding challenge by Clint Best 2014</p>
+    </div>
+  </body>
+</html>
+
