@@ -1,5 +1,4 @@
 class SoundsController < ApplicationController
-  helper_method :sort_column, :sort_direction
   def new
   end
   
@@ -8,7 +7,7 @@ class SoundsController < ApplicationController
   end
   
   def index
-    @sounds = Sound.order(sort_column + " " + sort_direction)
+    @sounds = Sound.all
   end
   
   def create
@@ -50,13 +49,6 @@ class SoundsController < ApplicationController
   private
   def sound_params
     params.require(:sound).permit(:name, :format, :length, :size)
-  end
-  def sort_column
-    Sound.column_names.include?(params[:sort]) ? params[:sort] : "name"
-  end
-  
-  def sort_direction
-    %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
   end
 
 end
