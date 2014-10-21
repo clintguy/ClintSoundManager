@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-
+<script>
+  $(document).on "page:change", -> alert "page has loaded!"
+  
+</script>
 <html>
   <head>
     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
@@ -28,9 +31,15 @@
     </header>
     <div class="container">
         <div class="content">
-          <% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %>"><%= message %></div>
-        <% end %>
+          <div id="alerts">
+            <% flash.each do |message_type, message| %>
+              <% if flash[:success] %>
+                <div id="flash_notice" class="alert alert-<%= message_type %> alert-dismissable fade in"><%= message %>
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                </div>
+          </div>   
+            <% end %>
+          <% end %>
           <%= yield %>
         </div>
       <%= render 'layouts/footer' %>

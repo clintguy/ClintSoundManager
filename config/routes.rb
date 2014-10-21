@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   
   get 'sounds/index'
   get 'sounds/new'
-  get 'sounds/show'
+  get 'sounds/show/:id(.:format)', to: 'sounds#edit'
   
   get 'sounds/:id(.:format)', to: 'sounds#edit'
   

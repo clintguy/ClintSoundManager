@@ -9,15 +9,17 @@ class SoundsController < ApplicationController
   
   def index
     @sounds = Sound.order(sort_column + " " + sort_direction)
+    #@sounds = Sound.search(params[:search], params[:page])
   end
   
   def create
     @sound = Sound.new(sound_params)
-    if @sound.save
+    if @sound.save!
       flash[:success] = "Sound Saved"
-      redirect_to sound_url(@sound)
+      redirect_to :action =>'index'
     else
-      render 'new'
+      @sounds = Sounds.all
+      render :action => 'new'
     end
   end
   
