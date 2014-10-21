@@ -29,6 +29,7 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass', '~> 2.3.1.0'
 
 gem 'will_paginate', '~> 3.0.7'
+gem 'will_paginate-bootstrap'
 
 group :development, :test do
   gem 'sqlite3' # Use sqlite3 as the database for Active Record

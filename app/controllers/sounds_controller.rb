@@ -9,7 +9,6 @@ class SoundsController < ApplicationController
   
   def index
     @sounds = Sound.order(sort_column + " " + sort_direction)
-    #@sounds = Sound.search(params[:search], params[:page])
   end
   
   def create

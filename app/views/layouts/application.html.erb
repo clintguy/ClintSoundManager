@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<script>
-  $(document).on "page:change", -> alert "page has loaded!"
-  
-</script>
+
 <html>
   <head>
     <title><%= content_for?(:title) ? yield(:title) : "Soundmanager" %></title>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -18,7 +15,6 @@
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <%= link_to "User Name", '#', id: "logo" %>
-        
         <nav>
           <ul class="nav navbar-nav pull-right">
             <li><%= link_to "Home",   welcome_index_path, id: "logo" %></li>
@@ -36,10 +32,10 @@
               <% if flash[:success] %>
                 <div id="flash_notice" class="alert alert-<%= message_type %> alert-dismissable fade in"><%= message %>
                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                </div>
-          </div>   
+                </div>  
+              <% end %>
             <% end %>
-          <% end %>
+          </div> 
           <%= yield %>
         </div>
       <%= render 'layouts/footer' %>
