@@ -1,4 +1,4 @@
-<div id="alerts">
+<div style="display:inline" id="alerts">
   <% flash.each do |message_type, message| %>
     <% if flash[:success] %>
       <div id="flash_notice" class="alert alert-<%= message_type %> alert-dismissable fade in"><%= message %>
