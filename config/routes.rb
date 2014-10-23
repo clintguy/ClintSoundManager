@@ -1,20 +1,5 @@
 Rails.application.routes.draw do
-  get 'users/new'
-
-  get 'welcome/about'
-  get 'welcome/index'
-  get 'welcome/contact'
-  
-  get 'sounds/index'
-  get 'sounds/new'
-  get 'sounds/show/:id(.:format)', to: 'sounds#edit'
-  
-  get 'sounds/:id(.:format)', to: 'sounds#edit'
-  
-  get 'users/new'
-  get 'users/signin'
-  
-  
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -23,13 +8,25 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-
+  get 'welcome/about'
+  get 'welcome/index'
+  get 'welcome/contact'
+  
+  get 'sounds/index'
+  get 'sounds/new'
+  
+  get 'users/signin'
+  get 'users/new'
+  get 'user/edit'
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
   
+  get 'sounds/:id/show' => 'sounds#show', as: :show
+  get 'sounds/:id/edit' => 'sounds#edit', as: :edit
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
  resources :sounds
+ resources :users
 
 
 

@@ -1,5 +1,5 @@
 <% content_for :title do %>Edit Sound<% end %>
-<% content_for :description do %>Edit and existing Sound<% end %>
+<% content_for :description do %>Edit an existing Sound<% end %>
 
   <head>
       <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -22,7 +22,7 @@
 
               <p>
                 <%= f.label :format %><br>
-                <%= f.text_field :format, class: 'form-control' %>
+                <%= f.select :format, [['MP3','MP3'],['CD','CD'],['Tape','Tape'],['8Track','8Track']], include_blank: true, class: 'form-control' %>
               </p>
 
               <p>
