@@ -1,9 +1,7 @@
 <div style="display:inline" id="alerts">
   <% flash.each do |message_type, message| %>
-    <% if flash[:success] %>
       <div id="flash_notice" class="alert alert-<%= message_type %> alert-dismissable fade in"><%= message %>
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
       </div>  
-    <% end %>
   <% end %>
 </div> 

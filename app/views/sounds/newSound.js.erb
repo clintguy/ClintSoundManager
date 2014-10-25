@@ -1,0 +1,62 @@
+<!-- Modal -->
+<head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+   </script>
+  <![endif]-->
+</head>
+
+
+<div class="modal fade" id="newSound" tabindex="-1" role="dialog" aria-labelledby="newsoundlabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="newsoundlabel">New Sound</h4>
+      </div>
+      <div class="modal-body">
+        <body>
+          <div class="container">
+            <div class="row" style="padding: 25px">
+              <div class ="col-md-6 col-md-offset-3">
+                <%= form_for :sound, url: sounds_path do |f| %>
+                    <p>
+                      <%= f.label :name  %><br>
+                      <%= f.text_field :name, class: 'form-control' %>
+                    </p>
+      
+                    <p>
+                      <%= f.label :format %><br>
+                      <%= f.select :format, [['MP3', 'MP3'],['CD','CD'],['Tape','Tape'],['8Track','8Track']], include_blank: true , class: 'form-control'%>
+                    </p>
+      
+                    <p>
+                      <%= f.label :length %><br>
+                      <%= f.text_field :length, class: 'form-control' %>
+                    </p>
+      
+                    <p>
+                      <%= f.label :size %><br>
+                      <%= f.text_field :size, class: 'form-control' %>
+                    </p>
+      
+                    <p>
+                      <%= f.submit "Save Sound", class: "btn btn-primary" %>
+                      </p>
+                <% end %>
+                <%= link_to 'Back', sounds_path %>
+              </div>
+            </div>
+          </div>
+        </body>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

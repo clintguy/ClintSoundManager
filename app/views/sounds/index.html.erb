@@ -20,14 +20,12 @@
             "iDisplayLength" : 15,
             "dom": '<"toolbar">frtip'
         });
-        $("div.toolbar").html('<b> <%= link_to 'New Sound', new_sound_path %></b>');
+        $("div.toolbar").html('<b> <%= link_to 'New Sound', new_sound_path, class: 'btn btn-primary' %></b>');
 			});
 		</script>
   </head>
   <body>
     <h1>Sound Library</h1>
-    <%= render 'layouts/flash_messages' %>
-
     <%# this padding is for the table inside the frame %>
     <div style="padding: 25px"> 
       <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered table-hover" id="sound_table">
