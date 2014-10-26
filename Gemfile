@@ -40,6 +40,7 @@ gem 'will_paginate',           '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
 gem 'bootstrap-sass',          '3.2.0.0'
 gem 'sass-rails',              '5.0.0.beta1'
+gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
 
 group :development, :test do
 # Use sqlite3 as the database for Active Record
