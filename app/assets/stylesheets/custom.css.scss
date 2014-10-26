@@ -276,3 +276,11 @@ aside {
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
    background-color: #DEDEDE;
 }
+
+/* Header cells */
+.table thead th {
+    text-align: center;
+      background-color: white !important;
+}
+
+

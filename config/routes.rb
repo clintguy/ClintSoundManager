@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'welcome/about'
   get 'welcome/index'
   get 'welcome/contact'
+  get 'welcome/donate'
   
   get 'sounds/index'
   get 'sounds/new'
