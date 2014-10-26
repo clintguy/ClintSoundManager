@@ -15,21 +15,24 @@
         $('#sound_table').dataTable({
             "bLengthChange": false,
             "iDisplayLength" : 15,
-            "dom": '<"toolbar">frtip'
+
         });
-         $("div.toolbar").html('<b> <%= link_to 'New Sound', new_sound_path, class: 'btn btn-primary' %></b>');
+
+         $('<%= link_to 'New Sound', new_sound_path, class: 'btn btn-primary', :style=>'margin-right:100px' %>').appendTo('div.dataTables_filter');
 			});
 		</script>
   </head>
   <body>
-    <h1>Sound Library</h1>
+    <h1><b>Sound Library</b></h1>
+    <div class="container">
+     <div class="content">
       <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered table-hover table-condensed" id="sound_table">
 	      <thead>
             <tr>
-              <th><%= link_to "Name" %></th>
-              <th><%= link_to "Format" %></th>
-              <th><%= link_to "Length" %></th>
-              <th><%= link_to "Size" %></th>
+              <th>Name</th>
+              <th>Format</th>
+              <th>Length</th>
+              <th>Size</th>
               <th></th>
               <th></th>
             </tr>
@@ -46,6 +49,7 @@
             </tr> 
             <% end %>
         </tbody>
-      </table>	
-
+      </table>
+     </div>
+    </div>
   </body>
