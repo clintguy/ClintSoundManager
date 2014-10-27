@@ -115,3 +115,28 @@ sound_list.each do |sound|
   Sound.create( :name => sound[0], :format => sound[1], :length => sound[2], :size => sound[3], )
 end
 
+User.create!(name:  "Example User",
+             email: "example@railstutorial.org",
+             password:              "foobar",
+             password_confirmation: "foobar",
+             admin: false)
+User.create!(name:  "Clinton Best",
+             email: "clintguy45@hotmail.com",
+             password:              "foobar2",
+             password_confirmation: "foobar2",
+             admin: true)
+User.create!(name:  "Clint Best",
+             email: "clintguy45@gmail.com",
+             password:              "foobar1",
+             password_confirmation: "foobar1",
+             admin: true)             
+
+99.times do |n|
+  name  = Faker::Name.name
+  email = "example-#{n+1}@railstutorial.org"
+  password = "password"
+  User.create!(name:  name,
+               email: email,
+               password:              password,
+               password_confirmation: password)
+end

@@ -17,8 +17,9 @@ Rails.application.routes.draw do
   get 'sounds/new'
   
   get 'users/signin'
-  get 'users/new'
+  get 'signup' => 'users#new'
   get 'user/edit'
+  get 'users/index'
   
   get 'videos/view'
  
