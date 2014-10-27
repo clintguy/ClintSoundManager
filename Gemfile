@@ -34,6 +34,8 @@ gem 'sdoc',                 '0.4.0', group: :doc
 # Use Rails Html Sanitizer for HTML sanitization
 gem 'rails-html-sanitizer', '1.0.1'
 
+# Youtube Gem
+
 # Style
 # Use SCSS for stylesheets
 gem 'will_paginate',           '3.0.7'

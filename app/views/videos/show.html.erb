@@ -1,0 +1,22 @@
+<% content_for :title do %>Youtube Video<% end %>
+<% content_for :description do %>Shows video from URL prvided<% end %>
+
+<head>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="embed-container">  
+      <%= embed() %> 
+      </div>
+    </div>
+  </div>
+</body>

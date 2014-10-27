@@ -37,6 +37,39 @@ textarea {
   border-radius: 25px;
 }
 
+.content2 {
+  color:black;
+  background-color: #F2F26F;
+  padding: 25px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: black;
+}
+
+.content3 {
+  color:black;
+  background-color: #78E7BC;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.content4 {
+  color:black;
+  background-color: #A7F039;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.content5 {
+  color:black;
+  background-color: #92A989;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+
+
+
 
 
 /* typography */
@@ -124,46 +157,55 @@ p {
 
 /* footer */
 
-footer {
+.panel-footer {
   position: fixed;
-  left: 8px;
+  left: 0px;
   bottom: 0px;
-  width: 99%;
-  padding-top: 5px;
-  border-top: 1px solid black;
-  color: #777;
+  width: 100%;
+  background-color: #FF823A;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  padding-top: 2px !important;
+  padding-bottom: 0px !important;
+
 }
 
-footer a {
+.panel-footer  a {
   color:black;
   margin-left:0 !important;
 }
 
-footer a:hover {
-  color: #F5053D;
+.panel-footer  a:hover {
+  color: black;
 }
 
-footer small {
+.panel-footer  small {
   float: left;
-  color:black;
+  color:white;
 }
 
-footer ul {
+.panel-footer  ul {
   float: right;
   list-style: none;
   color:black;
   margin-left:0 !important;
 }
 
-footer ul a {
+.panel-footer  ul a {
   margin-left:0 !important;
 }
 
-footer ul li {
+.panel-footer ul li {
   float: left;
   margin-left: 15px;
-  color:black;
+  color:white;
 }
+.panel-footer ul li a {
+  float: left;
+  margin-left: 15px;
+  color:white;
+}
+
 
 
 
@@ -280,7 +322,30 @@ aside {
 /* Header cells */
 .table thead th {
     text-align: center;
-    background-color: #FF823A !important;
+    background-color: white !important;
+}
+
+
+/* embedded videos */
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 12px;
+} 
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 

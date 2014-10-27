@@ -12,34 +12,36 @@
   </head>
   <body>
     <div class="container">
-      <div class="row" style="padding: 25px">
-        <div class ="col-md-6 col-md-offset-3">
-          <%= form_for :sound, url: sounds_path do |f| %>
-              <p>
-                <%= f.label :name  %><br>
-                <%= f.text_field :name, class: 'form-control' %>
-              </p>
-
-              <p>
-                <%= f.label :format %><br>
-                <%= f.select :format, [['MP3', 'MP3'],['CD','CD'],['Tape','Tape'],['8Track','8Track']], include_blank: true , class: 'form-control'%>
-              </p>
-
-              <p>
-                <%= f.label :length %><br>
-                <%= f.text_field :length, class: 'form-control' %>
-              </p>
-
-              <p>
-                <%= f.label :size %><br>
-                <%= f.text_field :size, class: 'form-control' %>
-              </p>
-
-              <p>
-                <%= f.submit "Save Sound", class: "btn btn-primary" %>
+      <div class="content3">
+        <div class="row" style="padding: 25px">
+          <div class ="col-md-6 col-md-offset-3">
+            <%= form_for :sound, url: sounds_path do |f| %>
+                <p>
+                  <%= f.label :name  %><br>
+                  <%= f.text_field :name, class: 'form-control' %>
                 </p>
-          <% end %>
-          <%= link_to 'Back', sounds_path %>
+  
+                <p>
+                  <%= f.label :format %><br>
+                  <%= f.select :format, [['MP3', 'MP3'],['CD','CD'],['Tape','Tape'],['8Track','8Track']], include_blank: true , class: 'form-control'%>
+                </p>
+  
+                <p>
+                  <%= f.label :length %><br>
+                  <%= f.text_field :length, class: 'form-control' %>
+                </p>
+  
+                <p>
+                  <%= f.label :size %><br>
+                  <%= f.text_field :size, class: 'form-control' %>
+                </p>
+  
+                <p>
+                  <%= f.submit "Save Sound", class: "btn btn-primary" %>
+                  </p>
+            <% end %>
+            <%= link_to 'Back', sounds_path %>
+          </div>
         </div>
       </div>
     </div>
