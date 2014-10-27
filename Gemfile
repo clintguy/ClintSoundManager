@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-
+ruby '2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails',                '4.2.0.beta2'
