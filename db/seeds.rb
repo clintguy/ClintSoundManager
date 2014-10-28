@@ -122,13 +122,7 @@ User.create!(name:  "Example User",
              admin: false,
              activated: true,
              activated_at: Time.zone.now)
-#User.create!(name:  "Clinton Best",
-#             email: "clintguy45@hotmail.com",
-#             password:              "foobar2",
-#             password_confirmation: "foobar2",
-#             admin: true,
-#             activated: true,
-#             activated_at: Time.zone.now)
+
 User.create!(name:  "Clint Best",
              email: "clintguy45@gmail.com",
              password:              "foobar1",
