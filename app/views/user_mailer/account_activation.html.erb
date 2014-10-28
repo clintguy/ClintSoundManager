@@ -1,10 +1,18 @@
-<h1>C.Best Ideas</h1>
-
-<p>Hi <%= @user.name %>,</p>
-
-<p>
-Welcome to the C.Best Ideas! Click on the link below to activate your account:
-</p>
-
-<%= link_to "Activate", edit_account_activation_url(@user.activation_token, 
-                                                    email: @user.email) %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+   <body>
+    <h1>C.Best Ideas</h1>
+    
+    <p>Hi <%= @user.name %>,</p>
+    
+    <p>
+    Welcome to the C.Best Ideas! Click on the link below to activate your account:
+    </p>
+    
+    <%= link_to "Activate", edit_account_activation_url(@user.activation_token, 
+                                                        email: @user.email) %>
+   </body>
+</html>
