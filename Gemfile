@@ -63,7 +63,6 @@ end
 group :production do
   gem 'pg' 
   gem 'rails_12factor'
-# Use Unicorn as the app server
   gem 'unicorn'
 end
 
