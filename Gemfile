@@ -45,6 +45,7 @@ gem 'sass-rails',              '5.0.0.beta1'
 gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 gem 'jquery-ui-rails'
 gem 'sass', '3.4.6'
+gem 'autoprefixer-rails'
 
 group :development, :test do
 # Use sqlite3 as the database for Active Record
