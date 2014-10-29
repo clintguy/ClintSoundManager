@@ -12,7 +12,7 @@ body {
   padding-top: 60px;
   background-image: image-url('simple_pattern_2.png');
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 section {
@@ -37,7 +37,7 @@ textarea {
 .content {
   color:black;
   background-color:white;
-  padding: 25px;
+  padding: 15px;
   border-radius: 25px;
 }
 
@@ -287,6 +287,7 @@ $gray-medium-light: #eaeaea;
 aside {
   section.user_info {
     margin-top: 20px;
+    whitespace: nowrap;
   }
   section {
     padding: 10px 0;
