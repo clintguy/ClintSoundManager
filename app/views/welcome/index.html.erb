@@ -7,13 +7,33 @@
 </head>
 
 <body>
+  <% if logged_in? %>
+  
+    <div class="row">
+      <aside class="col-md-4">
+        <section class="user_info">
+          <%= render 'shared/user_info' %>
+        </section>
+        <section class="micropost_form">
+          <%= render 'shared/micropost_form' %>
+        </section>
+      </aside>
+      <div class="col-md-8">
+        <h3>Micropost Feed</h3>
+        <%= render 'shared/feed' %>
+    </div>
+    </div>
+    
+  <% else %>
+  
   <div style="background-color:#F44D5E;" class="container">
     <div style="background-color:#F44D5E;" class="jumbotron">
       <h1 style="color:white;" >Welcome to C.Best Ideas</h1>
       <p style="text-align:center; color:white;">This site serves to showcase some of my talent but mostly just
          for my enjoyment.
       </p>
-      
     </div>
   </div>
+  
+  <% end %>
 </body>

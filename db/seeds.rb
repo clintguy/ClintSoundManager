@@ -125,10 +125,10 @@ User.create!(name:  "Example User",
 
 User.create!(name:  "Clint Best",
              email: "clintguy45@gmail.com",
-             password:              "foobar1",
-             password_confirmation: "foobar1",
+             password:              "foobar123",
+             password_confirmation: "foobar123",
              admin: true,
-             activated: false,
+             activated: true,
              activated_at: Time.zone.now)            
 
 99.times do |n|
